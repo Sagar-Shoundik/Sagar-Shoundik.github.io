@@ -27,6 +27,12 @@ nav{
     letter-spacing: 1px;
     cursor: pointer;
 }
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #f9004d;
+    display: none;
+}
 span{
     color: #f9004d;
 }
@@ -505,7 +511,7 @@ footer p:nth-child(2){
     #menu-btn.fa-times{
         transform: rotate(90deg);
     }
-    .header .navbar{
+    nav{
         position: absolute;
         top: 90%; left: 0; right: 0;
         background-color: var(--white);
@@ -514,10 +520,10 @@ footer p:nth-child(2){
         padding: 2rem;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
-    .navbar.active{
+    nav.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-    .header .navbar a{
+    nav a{
         display: block;
         margin: 2rem;
         text-align: center;
@@ -528,7 +534,7 @@ footer p:nth-child(2){
     html{
         font-size: 50%;
     }
-    .heading-title{
+    h1{
         font-size: 3rem;
     }
 }
