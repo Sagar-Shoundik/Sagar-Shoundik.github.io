@@ -7,12 +7,7 @@
 
 .character{
     width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    box-sizing: border-box;
+    height: 100vh;
     background-image: url(/Images/Background.jpg);
     background-size: cover;
     background-position: center;
@@ -22,7 +17,6 @@
 
 nav{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding-top: 45px;
