@@ -6,27 +6,28 @@
 }
 
 .character{
-    height: 100vh;
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
     background-image: url(/Images/Background.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
 }
 
 nav{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 8%;
-    height: 80px; /* Add this */
-    background-color: transparent; /* Or set a color if needed */
-    position: fixed; /* Sticky nav */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .logo{
