@@ -585,7 +585,19 @@ footer p:nth-child(2){
     margin: 30px auto;
     text-align: center;
 }
-
+.experience .box {
+    height: auto;
+    min-height: 365px;
+    width: 800px;
+    max-width: 95%;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
 .experience .card {
     height: auto;
     min-height: 365px;
