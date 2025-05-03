@@ -408,6 +408,31 @@ ul li{
         width: 85%;
     }
 }
+.Spring {
+    width: 85%;
+    animation: Spring 3s;
+}
+.Microservices {
+    width: 80%;
+    animation: Microservices 3s;
+}
+.APIs {
+    width: 90%;
+    animation: APIs 3s;
+}
+
+@keyframes Spring {
+    0%{ width: 0%; }
+    100%{ width: 85%; }
+}
+@keyframes Microservices {
+    0%{ width: 0%; }
+    100%{ width: 80%; }
+}
+@keyframes APIs {
+    0%{ width: 0%; }
+    100%{ width: 90%; }
+}
 
 .contact{
     width: 100%;
@@ -704,4 +729,37 @@ footer p:nth-child(2){
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.5;
+}
+.experience .box {
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience .card {
+    width: 800px;
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.experience .card h3 {
+    margin-top: 10px;
+    color: #a1a1a1;
+    font-size: 20px;
+}
+
+.experience .card h5 {
+    font-size: 24px;
+    color: #f9004d;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .experience .card {
+        padding: 20px;
+    }
+    
+    .experience .card h5 {
+        font-size: 20px;
+    }
 }
