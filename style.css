@@ -71,7 +71,7 @@ nav ul li a:hover{
 }
 
 .detail{
-    position: relative;
+    position: absolute;
     top: 55%;
     left: 8%;
     transform: translateY(-50%);
