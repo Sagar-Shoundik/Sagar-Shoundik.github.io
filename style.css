@@ -19,9 +19,14 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding: 20px 8%;
+    height: 80px; /* Add this */
+    background-color: transparent; /* Or set a color if needed */
+    position: fixed; /* Sticky nav */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 .logo{
