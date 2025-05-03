@@ -1,710 +1,17 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
-    box-sizing: border-box;
-}
-
-.character{
-    height: 100vh;
-    width: 100%;
-    background-image: url(/Images/Background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
-}
-
-.logo{
-    color: white;
-    font-size: 35px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
-span{
-    color: #f9004d;
-}
-
-.nav-links{
-    display: flex;
-}
-
-nav ul li{
-    list-style: none;
-    padding: 10px 25px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    text-transform: capitalize;
-}
-
-nav ul li a:hover{
-    color: #f9004d;
-    transition: .4s;
-}
-
-.hamburger{
-    display: none;
-    cursor: pointer;
-}
-
-.hamburger .line{
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    margin: 6px 0;
-    transition: 0.3s;
-}
-
-.detail{
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
-    color: #fff;
-}
-
-h1{
-    color: white;
-    margin: 20px 0px 20px;
-    font-size: 75px;
-}
-
-h3{
-    color: white;
-    margin-bottom: 50px;
-}
-
-h4{
-    color: #fcfc;
-    letter-spacing: 2px;
-    font-size: 20px;
-}
-
-.btn{
-    background: #f9004d;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    padding: 10px 25px;
-    font-weight: bold;
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: .4s;
-}
-
-.btn:hover{
-    transform: scale(1.2);
-}
-
-.about{
-    width: 100%;
-    padding: 80px 0px;
-    background-color: #191919;
-}
-
-.about img{
-    height: auto;
-    width: 430px;
-    max-width: 100%;
-}
-
-.about-txt{
-    width: 650px;
-}
-
-.main{
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.about-txt h2{
-    color: white;
-    font-size: 75px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-}
-
-.about-txt h5{
-    color: white;
-    letter-spacing: 2px;
-    font-size: 22px;
-    margin-bottom: 25px;
-    text-transform: capitalize;
-}
-
-.about-txt p{
-    color: #fcfc;
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 45px;
-}
-
-.about-txt p span{
-    color: #f061b4;
-}
-
-button{
-    background-color: #f9004d;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: .4s;
-}
-
-button:hover{
-    background-color: transparent;
-    border: 2px solid #f9004d;
-    cursor: pointer;
-}
-
-.education{
-    background: #101010;
-    width: 100%;
-    padding: 100px 0px;
-}
-
-.title h2{
-    color: white;
-    font-size: 75px;
-    width: 1130px;
-    max-width: 95%;
-    margin: 30px auto;
-    text-align: center;
-}
-
-.box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
-    flex-wrap: wrap;
-}
-
-.card{
-    height: 365px;
-    width: 335px;
-    padding: 20px 35px;
-    background: #191919;
-    border-radius: 20px;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
-
-.card img{
-    width: 15%;
-}
-
-h5{
-    color: white;
-    font-size: 23px;
-    margin-bottom: 15px;
-}
-
-h3{
-    color: #ee2464;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-ul li{
-    list-style-type: none;
-    color: #fcfc;
-    font-size: 16px;
-    line-height: 27px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.skill{
-    background: #101010;
-    width: 100%;
-    padding: 100px 0px;
-}
-
-.skill .card{
-    height: auto;
-    width: 500px;
-    padding: 20px 35px;
-    background: #191919;
-    border-radius: 20px;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.skill h2{
-    color: white;
-    font-size: 75px;
-    width: 1130px;
-    max-width: 95%;
-    margin: 30px auto;
-    text-align: center;
-}
-
-.skill h4{
-    margin: 5px;
-    text-align: left;
-}
-
-.skill li{
-    margin: 20px 0;
-    padding: 10px;
-}
-
-.bar{
-    background: #444444a2;
-    display: block;
-    height: 20px;
-    border: 1px solid rgba(7, 5, 5, 0.733);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-.bar:hover{
-    box-shadow: 0 14px 28px rgba(56, 56, 56, 0.25), 0 10px 10px rgba(189, 186, 186, 0.22);
-}
-
-.bar span{
-    height: 20px;
-    float: left;
-    background: linear-gradient(to right, rgb(238, 87, 157) , #f9004d);
-}
-
-.html{
-    width: 80%;
-    animation: html 3s;
-}
-
-.css{
-    width: 75%;
-    animation: css 3s;
-}
-
-.php{
-    width: 60%;
-    animation: php 3s;
-}
-
-.Javascript{
-    width: 80%;
-    animation: Javascript 3s;
-}
-
-.C{
-    width: 85%;
-    animation: C 3s;
-}
-
-.CPP{
-    width: 85%;
-    animation: CPP 3s;
-}
-
-.Java{
-    width: 90%;
-    animation: Java 3s;
-}
-
-.NET{
-    width: 85%;
-    animation: NET 3s;
-}
-
-@keyframes html {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 80%;
-    }
-}
-
-@keyframes css {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 75%;
-    }
-}
-
-@keyframes php {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 60%;
-    }
-}
-
-@keyframes Javascript {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 80%;
-    }
-}
-
-@keyframes C {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 85%;
-    }
-}
-
-@keyframes CPP {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 85%;
-    }
-}
-
-@keyframes Java {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90%;
-    }
-}
-
-@keyframes NET {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 85%;
-    }
-}
-.Spring {
-    width: 85%;
-    animation: Spring 3s;
-}
-.Microservices {
-    width: 80%;
-    animation: Microservices 3s;
-}
-.APIs {
-    width: 90%;
-    animation: APIs 3s;
-}
-
-@keyframes Spring {
-    0%{ width: 0%; }
-    100%{ width: 85%; }
-}
-@keyframes Microservices {
-    0%{ width: 0%; }
-    100%{ width: 80%; }
-}
-@keyframes APIs {
-    0%{ width: 0%; }
-    100%{ width: 90%; }
-}
-
-.contact{
-    width: 100%;
-    padding: 80px 0px;
-    background-color: #191919;
-}
-
-.contact img{
-    height: auto;
-    width: 430px;
-    max-width: 100%;
-}
-
-.contact-form{
-    width: 650px;
-}
-
-.contact-form h2{
-    color: white;
-    font-size: 75px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-}
-
-.contact-form p{
-    color: #fcfc;
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 45px;
-}
-
-.contact-form form{
-    position: relative;
-}
-
-.contact-form form input,
-form textarea{
-    width: 100%;
-    padding: 17px;
-    border: none;
-    outline: none;
-    background: #101010;
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 0.7rem;
-    border-radius: 10px;
-}
-
-.contact-form textarea{
-    resize: none;
-    height: 200px;
-}
-
-.contact-form .btn{
-    background-color: #f9004d;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 10px;
-    transition: .4s;
-    width: 220px;
-}
-
-.contact-form .btn:hover{
-    background-color: transparent;
-    border: 2px solid #f9004d;
-    cursor: pointer;
-}
-
-.contact-form a{
-    text-decoration: none;
-    color: #c55e9a;
-    font-weight: bold;
-}
-
-footer{
-    position: relative;
-    width: 100%;
-    height: 400px;
-    background: #191919;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-footer p:nth-child(1){
-    font-size: 30px;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-footer p:nth-child(2){
-    color: white;
-    font-size: 17px;
-    width: 500px;
-    max-width: 90%;
-    text-align: center;
-    line-height: 26px;
-}
-
-.social{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.social a{
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f9004d;
-    border-radius: 50px;
-    margin: 22px 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.social a:hover{
-    transform: scale(1.3);
-    transition: .3s;
-}
-
-.end{
-    position: absolute;
-    color: #f9004d;
-    bottom: 35px;
-    font-size: 14px;
-}
-
-/* Experience Section */
-.experience {
-    background: #101010;
-    width: 100%;
-    padding: 100px 0px;
-}
-
-.experience .title h2 {
-    color: white;
-    font-size: 75px;
-    width: 1130px;
-    max-width: 95%;
-    margin: 30px auto;
-    text-align: center;
-}
-
-.experience .card {
-    height: auto;
-    min-height: 365px;
-    width: 800px;
-    max-width: 95%;
-    padding: 20px 35px;
-    background: #191919;
-    border-radius: 20px;
-    margin: 15px auto;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
-
-.experience .card img {
-    width: 100px;
-    margin-bottom: 20px;
-}
-
-.responsibilities {
-    text-align: left;
-    padding-left: 20px;
-}
-
-.responsibilities li {
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 1.5;
-}
-.experience .box {
-    flex-direction: column;
-    align-items: center;
-}
-
-.experience .card {
-    width: 800px;
-    max-width: 90%;
-    margin: 20px auto;
-    text-align: left;
-}
-
-.experience .card h3 {
-    margin-top: 10px;
-    color: #a1a1a1;
-    font-size: 20px;
-}
-
-.experience .card h5 {
-    font-size: 24px;
-    color: #f9004d;
-    margin-bottom: 5px;
-}
-
-/* Enhanced Responsive Design */
-@media (max-width: 1200px) {
-    .main {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .about img {
-        margin-bottom: 30px;
-        max-width: 100%;
-        height: auto;
-    }
-    
-    .about-txt, .contact-form {
-        width: 100%;
-    }
-    
-    .contact .main {
-        flex-direction: column-reverse;
-    }
-    
-    .contact img {
-        margin-top: 30px;
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-width: 900px) {
-    h1 {
-        font-size: 50px;
-    }
-    
-    .about-txt h2, .skill h2, .contact-form h2, .title h2 {
-        font-size: 50px;
-    }
-    
-    .skill .card {
-        width: 100%;
-    }
-    
-    .experience .card {
-        width: 90%;
-    }
-}
-
+/* Adjust nav links for smaller screens */
 @media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-    
     .nav-links {
+        display: block; /* Stack items vertically */
+        width: 100%;
         position: fixed;
         top: 100px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 100px);
+        left: -100%; /* Initially hide the menu */
         background: #191919;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
         padding-top: 30px;
         transition: 0.5s;
         z-index: 999;
-        overflow-y: auto;
+        align-items: center;
+        text-align: center;
     }
     
     .nav-links.active {
@@ -713,11 +20,10 @@ footer p:nth-child(2){
     
     .nav-links li {
         margin: 15px 0;
-        padding: 10px 0;
         width: 100%;
-        text-align: center;
+        padding: 10px 0;
     }
-    
+
     .hamburger.active .line:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
     }
@@ -729,89 +35,54 @@ footer p:nth-child(2){
     .hamburger.active .line:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
     }
-    
-    .detail {
-        text-align: center;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-    }
-    
+}
+
+/* Resize images for portrait and landscape */
+@media (max-width: 768px) {
     .about img, .contact img {
         width: 100%;
-        max-width: 400px;
+        max-width: 400px; /* Ensure images fit within the screen */
         height: auto;
-    }
-    
-    /* Experience cards */
-    .experience .card {
-        padding: 15px;
-    }
-    
-    .experience .card img {
-        width: 80px;
     }
 }
 
+/* Adjust for small mobile portrait screens */
 @media (max-width: 480px) {
+    .logo {
+        font-size: 28px; /* Smaller logo size */
+    }
+
     h1 {
-        font-size: 36px;
+        font-size: 36px; /* Adjust heading size */
     }
-    
-    h3 {
-        font-size: 16px;
-    }
-    
-    h4 {
-        font-size: 16px;
-    }
-    
+
     .about-txt h2, .skill h2, .contact-form h2, .title h2 {
         font-size: 36px;
     }
-    
+
     .btn, button {
         padding: 8px 16px;
         font-size: 14px;
     }
-    
+
     .card {
         width: 100%;
         margin: 10px 0;
         padding: 15px;
     }
-    
+
     .contact-form .btn {
         width: 100%;
     }
-    
-    /* Adjust logo size */
-    .logo {
-        font-size: 28px;
-    }
-    
-    /* Nav padding adjustment */
-    nav {
-        padding-top: 25px;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    
-    /* Experience section adjustments */
-    .experience .card h5 {
-        font-size: 18px;
-    }
-    
-    .experience .card h3 {
-        font-size: 16px;
-    }
-    
-    .responsibilities li {
-        font-size: 13px;
+
+    /* Adjust images in small devices portrait */
+    .about img, .contact img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
-/* Landscape specific adjustments */
+/* Adjustments for landscape orientation */
 @media (max-width: 900px) and (orientation: landscape) {
     .nav-links {
         top: 80px;
@@ -819,34 +90,23 @@ footer p:nth-child(2){
         justify-content: flex-start;
         padding-top: 10px;
     }
-    
+
     .nav-links li {
         margin: 8px 0;
         padding: 5px 0;
     }
-    
-    .character {
-        height: auto;
-        min-height: 100vh;
-    }
-    
-    .detail {
-        top: 60%;
-    }
-    
-    /* Adjust image sizes in landscape */
+
     .about img, .contact img {
         max-width: 300px;
     }
-    
-    /* Skill cards adjustment */
-    .skill .card {
+
+    /* Resize skill and experience cards */
+    .skill .card, .experience .card {
         width: 90%;
     }
-    
-    /* Experience cards adjustment */
-    .experience .card {
-        width: 90%;
+
+    .experience .card img {
+        width: 80px;
     }
 }
 
@@ -855,28 +115,27 @@ footer p:nth-child(2){
     h1 {
         font-size: 30px;
     }
-    
+
     h3 {
         font-size: 14px;
-        margin-bottom: 20px;
     }
-    
-    .btn {
-        margin: 15px 0;
-    }
-    
+
     .nav-links {
         top: 70px;
         height: calc(100vh - 70px);
     }
-    
+
     .logo {
         font-size: 24px;
     }
-    
-    /* Adjust image sizes */
+
+    /* Adjust images for very small landscape screens */
     .about img, .contact img {
         max-width: 250px;
+    }
+
+    .btn {
+        margin: 15px 0;
     }
 }
 
@@ -885,18 +144,17 @@ footer p:nth-child(2){
     h1 {
         font-size: 32px;
     }
-    
+
     .about-txt h2, .skill h2, .contact-form h2, .title h2 {
         font-size: 32px;
     }
-    
-    /* Make sure images don't overflow */
+
+    /* Ensure images are responsive */
     img {
         max-width: 100%;
         height: auto;
     }
-    
-    /* Adjust padding in cards */
+
     .card {
         padding: 10px;
     }
