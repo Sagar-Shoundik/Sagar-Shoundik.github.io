@@ -71,11 +71,12 @@ nav ul li a:hover{
 }
 
 .detail{
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 55%;
     left: 8%;
     transform: translateY(-50%);
     color: #fff;
+    padding-top: 80px;
 }
 
 h1{
