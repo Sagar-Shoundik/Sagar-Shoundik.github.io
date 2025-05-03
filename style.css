@@ -1,161 +1,228 @@
-/* Adjust nav links for smaller screens */
-@media (max-width: 768px) {
-    .nav-links {
-        display: block; /* Stack items vertically */
-        width: 100%;
-        position: fixed;
-        top: 100px;
-        left: -100%; /* Initially hide the menu */
-        background: #191919;
-        padding-top: 30px;
-        transition: 0.5s;
-        z-index: 999;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .nav-links.active {
-        left: 0;
-    }
-    
-    .nav-links li {
-        margin: 15px 0;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .hamburger.active .line:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-    }
-    
-    .hamburger.active .line:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .hamburger.active .line:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
-    }
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Resize images for portrait and landscape */
-@media (max-width: 768px) {
-    .about img, .contact img {
-        width: 100%;
-        max-width: 400px; /* Ensure images fit within the screen */
-        height: auto;
-    }
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0b0b0b;
+    color: #fff;
+    line-height: 1.6;
 }
 
-/* Adjust for small mobile portrait screens */
-@media (max-width: 480px) {
-    .logo {
-        font-size: 28px; /* Smaller logo size */
-    }
-
-    h1 {
-        font-size: 36px; /* Adjust heading size */
-    }
-
-    .about-txt h2, .skill h2, .contact-form h2, .title h2 {
-        font-size: 36px;
-    }
-
-    .btn, button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    .card {
-        width: 100%;
-        margin: 10px 0;
-        padding: 15px;
-    }
-
-    .contact-form .btn {
-        width: 100%;
-    }
-
-    /* Adjust images in small devices portrait */
-    .about img, .contact img {
-        max-width: 100%;
-        height: auto;
-    }
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/* Adjustments for landscape orientation */
-@media (max-width: 900px) and (orientation: landscape) {
-    .nav-links {
-        top: 80px;
-        height: calc(100vh - 80px);
-        justify-content: flex-start;
-        padding-top: 10px;
+ul {
+    list-style-type: none;
+}
+
+/* Header Styles */
+header {
+    background: #191919;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* About Me Section */
+.about-me {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+/* Skills Section */
+.skills {
+    background: #191919;
+    padding: 50px 10%;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.skills ul li {
+    background: #333;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.skills ul li h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Experience Section */
+.experience {
+    padding: 50px 10%;
+}
+
+.experience h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.experience .card {
+    height: auto;
+    min-height: 365px;
+    width: 800px;
+    max-width: 95%;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px auto;  /* Center the card */
+    position: relative;
+    overflow: hidden;
+    text-align: center;  /* Center the content inside the card */
+}
+
+.experience .card img {
+    width: 100px;
+    margin-bottom: 20px;
+    display: block;  /* Ensure image is centered */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience .card h3,
+.experience .card h5 {
+    text-align: center;  /* Center align the titles */
+    margin: 10px 0;
+}
+
+/* Adjust the box for Experience */
+.experience .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Ensure the content is centered */
+}
+
+/* Contact Section */
+.contact {
+    background: #333;
+    padding: 50px 10%;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact ul li {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.contact ul li a {
+    color: #3498db;
+    transition: color 0.3s;
+}
+
+.contact ul li a:hover {
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background: #191919;
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .about-me, .skills, .experience, .contact {
+        padding: 50px 5%;
     }
 
-    .nav-links li {
-        margin: 8px 0;
-        padding: 5px 0;
+    .skills ul {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .about img, .contact img {
-        max-width: 300px;
-    }
-
-    /* Resize skill and experience cards */
-    .skill .card, .experience .card {
+    .experience .card {
         width: 90%;
     }
 
-    .experience .card img {
-        width: 80px;
-    }
-}
-
-/* Very small devices landscape */
-@media (max-width: 640px) and (orientation: landscape) {
-    h1 {
-        font-size: 30px;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-    h3 {
-        font-size: 14px;
-    }
-
-    .nav-links {
-        top: 70px;
-        height: calc(100vh - 70px);
-    }
-
-    .logo {
-        font-size: 24px;
-    }
-
-    /* Adjust images for very small landscape screens */
-    .about img, .contact img {
-        max-width: 250px;
-    }
-
-    .btn {
-        margin: 15px 0;
-    }
-}
-
-/* Adjustments for very small screens */
-@media (max-width: 360px) {
-    h1 {
-        font-size: 32px;
-    }
-
-    .about-txt h2, .skill h2, .contact-form h2, .title h2 {
-        font-size: 32px;
-    }
-
-    /* Ensure images are responsive */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .card {
-        padding: 10px;
+    nav ul li {
+        margin: 10px 0;
     }
 }
