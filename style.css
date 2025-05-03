@@ -660,3 +660,48 @@ footer p:nth-child(2){
         width: 100%;
     }
 }
+/* Experience Section */
+.experience {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.experience .title h2 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    max-width: 95%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.experience .card {
+    height: auto;
+    min-height: 365px;
+    width: 800px;
+    max-width: 95%;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.experience .card img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.responsibilities {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.responsibilities li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
