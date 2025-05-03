@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,12 @@
     <div class="character">
         <nav>
             <h2 class="logo">Port<span>folio</span></h2>
-            <ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About_Section">About Me</a></li>
                 <li><a href="#Education_Section">Education</a></li>
@@ -41,7 +46,6 @@
     </div>
 
     <!--About Section-->
-
     <a name="About_Section"></a>
     <section class="about">
         <div class="main">
@@ -59,7 +63,6 @@
                      <span>St. Xavier's College Ranchi</span> in 2020 and  Currently,
                     I'm pursuing Bachelor of Computer Application (BCA) from <span>St. Columba's College Hazaribag</span>.
                     <br>
-                    
                 </p>
                 <a href="https://api.whatsapp.com/send?phone=919431556836&text=Hi%20we%20need%20help%20regarding%20something" >
                     <button type="button">Let's Talk</button>
@@ -69,7 +72,6 @@
     </section>
 
     <!--Education Section-->
-
     <a name="Education_Section"></a>
     <div class="education">
         <div class="title">
@@ -109,7 +111,6 @@
                     <li><span>Semester : </span>V</li>
                 </ul>
             </div>
-
         </div>
     </div>
 
@@ -154,7 +155,6 @@
     </div>
 
     <!--Contact Section-->
-
     <a name="Contact_Section"></a>
     <section class="contact">
         <div class="main">
@@ -172,19 +172,11 @@
                     <input type="submit" name="" value="Submit" class="btn">
                 </form>
             </div>
-            <img src="/Images/Passport PIC.jpg">
+            <img src="/Images/Passport PIC.jpg" alt="Contact Image">
         </div>
     </section>
-    <!-- <div class="contact">
-        <p>Thank you for visiting my Portfolio website.
-            <br> Give me an opportunity to join your organization for developer position,
-            where I can utilise and enhance my skills by fullfilling organizational goals.
-        </p>
-        <a href="" class="button1">Hire Me</a>
-    </div> -->
 
     <!--Footer Section-->
-
     <footer>
         <p>Sagar Kumar Shoundik</p>
         <p>If I can learn anything from you or you want to learn from me please don't hesitate to contact me.</p>
@@ -198,5 +190,24 @@
         </div>
         <p class="end">Copyright by Shoundik</p>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
